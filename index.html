@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    /* ===== Global Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+      background-color: #0e0e0e;
+      color: #e0e0e0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 80px;
+      background-color: #111;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #bbb;
+      margin: 0 15px;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 40px;
+      gap: 60px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      color: #ccc;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      max-width: 450px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .hero-buttons a {
+      text-decoration: none;
+      padding: 12px 28px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .hero-buttons a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .hero img {
+      flex: 1;
+      width: 100%;
+      max-width: 420px;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+
+    /* ===== Info Section ===== */
+    section {
+      background-color: #161616;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .members {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    .member-card {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      padding: 35px;
+      width: 500px; /* widened from 280px to 320px */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    }
+
+    .member-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 30px rgba(255,255,255,0.1);
+    }
+
+    .member-card img {
+      width: 160px; /* larger image */
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    }
+
+    .member-card h4 {
+      color: #fff;
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+
+    .member-card p {
+      color: #aaa;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .member-card .role {
+      color: #0078d7;
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .member-card .desc {
+      color: #bbb;
+      font-size: 0.93rem;
+      line-height: 1.5;
+    }
+
+    .intro {
+      max-width: 750px;
+      margin: 50px auto 0;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #0b0b0b;
+      text-align: center;
+      color: #777;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h2 {
+        font-size: 2.4rem;
+      }
+
+      header {
+        flex-direction: column;
+      }
+
+      .member-card {
+        width: 90%;
+        max-width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome to Our Portfolio</h2>
+      <p>Showcasing our work, creativity, and dedication as Computer System Technician – Networking students at Canadore College.</p>
+      <div class="hero-buttons">
+        <a href="#">Explore Now</a>
+        <a href="#">Play Video</a>
+      </div>
+    </div>
+    <img src="https://st.depositphotos.com/1993283/4541/i/450/depositphotos_45414409-stock-photo-silhouette-of-a-team.jpg" alt="Team Photo">
+  </section>
+
+  <section>
+    <h3>Team Members</h3>
+    <div class="members">
+      <div class="member-card">
+        <img src="C:\Users\daman\Pictures\7c905675-4bd4-4f7b-99c0-d9a6b078027e.jpg"alt="Davinder">
+        <h4>Davinder Singh</h4>
+        <p>Student ID: A00199767</p>
+        <p class="role">Frontend & Network Configuration</p>
+        <p class="desc">Focused on creating efficient, responsive, and modern web applications using HTML, CSS, and Azure cloud hosting.</p>
+      </div>
+
+      <div class="member-card">
+        <img src="C:\Users\daman\Pictures\f72cf525-96f4-4d6c-a203-ec8575fa2a84.jpg" alt="Khushpreet">
+        <h4>Khushpreet Kaur</h4>
+        <p>Student ID: A00193724</p>
+        <p class="role">Backend & Cloud Deployment</p>
+        <p class="desc">Passionate about backend systems, network security, and Azure DevOps integration for scalable cloud solutions.</p>
+      </div>
+    </div>
+
+    <p class="intro">
+      This is our first static web application hosted on <strong>Microsoft Azure</strong>.  
+      Our goal is to apply modern design principles and web technologies to build sleek, responsive, and professional digital projects.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Canadore College | Designed by Davinder Singh & Khushpreet Kaur
+  </footer>
+
+</body>
+</html>
